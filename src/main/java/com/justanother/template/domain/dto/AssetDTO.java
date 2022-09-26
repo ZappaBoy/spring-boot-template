@@ -9,6 +9,6 @@ import java.io.Serializable;
 @EqualsAndHashCode(callSuper = false)
 public class AssetDTO extends AbstractDTO implements Serializable {
 
-    private String symbol;
+    private String uuid;
     private String description;
 }

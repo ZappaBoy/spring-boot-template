@@ -12,4 +12,7 @@ public class EngineConfig {
 
     @Value("${just-another-property}")
     boolean justAnotherProperty;
+
+    @Value("${initial-assets-number}")
+    int initialAssetsNumber;
 }

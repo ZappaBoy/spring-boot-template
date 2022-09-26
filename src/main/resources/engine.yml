@@ -1,1 +1,2 @@
 just-another-property: ${JUST_ANOTHER_PROPERTY:false}
+initial-assets-number: ${INITIAL_ASSETS_NUMBER:3}
