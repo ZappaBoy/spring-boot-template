@@ -1,3 +1,11 @@
+# Custom ignores
+.env
+.idea
+db-volume
+logs
+target
+*.iml
+
 # Compiled class file
 *.class
 

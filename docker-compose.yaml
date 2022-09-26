@@ -1,0 +1,36 @@
+version: "3"
+services:
+  backend:
+    build: .
+    image: sprint-boot-template:latest
+    container_name: sprint_boot_template_backend
+    restart: unless-stopped
+    ports:
+      - "${PORT}:8080"
+    env_file:
+      - .env
+    depends_on:
+      - database
+    networks:
+      - sprint-boot-template-network
+  database:
+    image: postgres:alpine
+    container_name: sprint_boot_template_database
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: "${DB_NAME:-database}"
+      POSTGRES_USER: "${DB_USERNAME:-admin}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD:-password}"
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - './db-volume:/data/db'
+    networks:
+      - sprint-boot-template-network
+
+networks:
+  sprint-boot-template-network:
+
+volumes:
+  db_data:
+    driver: local
