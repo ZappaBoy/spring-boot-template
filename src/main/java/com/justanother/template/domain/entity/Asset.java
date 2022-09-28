@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class Asset extends AbstractEntity implements Serializable {
 
     @Id
-    private String symbol;
+    private String uuid;
     private String description;
 
 }
