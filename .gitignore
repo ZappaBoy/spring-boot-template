@@ -5,6 +5,7 @@ db-volume
 logs
 target
 *.iml
+.mvn
 
 # Compiled class file
 *.class
