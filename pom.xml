@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>com.justanother</groupId>
-    <artifactId>tradingframework</artifactId>
+    <artifactId>justanothertemplate</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>trading-framework</name>
-    <description>Just Another Trading Framework</description>
+    <name>just-another-template</name>
+    <description>Just Another Spring Boot Template</description>
     <packaging>jar</packaging>
 
     <properties>
